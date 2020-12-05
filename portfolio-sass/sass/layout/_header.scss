@@ -1,0 +1,43 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.8),
+        rgba($color-secundary,0.8)),
+        url(../img/fondo1.jpg);
+    background-size: cover;
+    background-position: top; 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    @include respond(phone){
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    }
+           &__logo-box{
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+        }
+
+        &__logo{
+            height: 3.5rem;
+            font-size: 2rem;
+            font-family: 'Press Start 2P', cursive;
+            color: $color-black;
+        }
+
+        &__text-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            text-align: center;
+        }
+        &__btns{
+            position: absolute;
+            top: 70%;
+            left: 49.5%;
+            transform: translate(-50%, -40%);
+            text-align: center;
+        }
+        }
